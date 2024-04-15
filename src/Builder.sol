@@ -4,10 +4,6 @@ pragma solidity ^0.6.7;
 import './Logic.sol';
 
 contract TermBuilder {
-	function ignore() internal pure returns (Term memory t) {
-		t.kind = TermKind.Ignore;
-		t.symbol = 1; // 1 rather than 0 to be able to discern Ignore from an uninitialized piece of memory.
-	}
 
 
 	function Var(bytes memory _name) internal pure returns (Term memory t) {
