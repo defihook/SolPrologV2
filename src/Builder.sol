@@ -9,10 +9,6 @@ contract TermBuilder {
 		t.symbol = 1; // 1 rather than 0 to be able to discern Ignore from an uninitialized piece of memory.
 	}
 
-	function num(uint _value) internal pure returns (Term memory t) {
-		t.kind = TermKind.Number;
-		t.symbol = _value;
-	}
 
 	function Var(bytes memory _name) internal pure returns (Term memory t) {
 		t.kind = TermKind.Variable;
