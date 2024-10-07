@@ -2,7 +2,7 @@
 pragma solidity ^0.6.7;
 
 enum TermKind {
-	Ignore,  // NOTE: We depend on Ignore being the first element (uninitialized terms must be of this kind)
+	Ignore,  
 	Number,
 	Variable,
 	List,
